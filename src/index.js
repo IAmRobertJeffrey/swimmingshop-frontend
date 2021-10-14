@@ -1,5 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import App from './Components/App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+require('dotenv').config()
 
-const element = <h1>Hello YO</h1>
-ReactDOM.render(element, document.getElementById("root"))
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
